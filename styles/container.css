@@ -7,55 +7,92 @@ body, header {
     padding: 0px;
 }
 
-header {
-
-   padding-inline: 16px ;
 
 
-    .logo {
-        background-color: green;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        
-        
-        h1 {
-            display: flex;
-            align-items: center;
-        }
-        .patabranca{
-            margin-right: 5px;
-            width: 50px;
-            height: 50%;
-        }   
-    }
-}
-
-.nav {
-    max-width: 1280px;
-    height: 70px;
-    margin-inline: auto ;
-
+h1 {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
+.patabranca{
+    margin-right: 5px;
+    width: 50px;
+    height: 50%;
+} 
 
-.nav-list {
-    display: flex;
-    gap: 30px;
-    list-style: none;
+.pataimg {
+    height: 35px;
 }
 
-.nav-list a {
-    font-size: 18px;
-    color: #fff;
-    padding-block: 16px;
-}
+
+
 
 .hero {
     height: calc(100vh - 70px);
     background: center / cover no-repeat url("../img/cachorroMain.png");
+
+    header {
+
+        padding-inline: 16px ;
+     
+        .btn-primary {
+         position: absolute;
+         right: 70px;
+         cursor: pointer;
+         height: 45px;
+         width: 125px;
+         border-radius: 20px;
+         border: none;
+     }
+     
+     .nav {
+         max-width: 1920px;
+         height: 70px;
+         margin-inline: auto ;
+     
+         display: flex;
+     
+         align-items: center;
+     
+         .logo   {
+         padding-left: 5%;
+         }
+     
+         .nav-list {
+             display: flex;
+             gap: 30px;
+             list-style: none;
+
+         }
+         
+         .nav-list a {
+             color: #fff;
+             padding-block: 16px;
+             justify-content: start;
+             text-decoration: none;
+         }
+     
+     }
+     }
+
+    .hero-text {
+        width: 40%;
+        margin-left:5% ;
+        margin-top: 7%;
+
+        .btn-secondary {
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 30px ;
+            border: 2px solid white;
+            text-decoration: none;
+            background: transparent;
+            transition: all 0.3s ease;
+            border-radius: 30px;
+        }
+    }
+    
 }
 
 .hamburger {
@@ -81,6 +118,8 @@ header {
     .hamburger {
         display: block;
         z-index: 1;
+        position: absolute;
+        right: 20px;
     }
 
     .nav-list {
@@ -146,5 +185,3 @@ header {
         top: -7px;
     }
 }
-
-
