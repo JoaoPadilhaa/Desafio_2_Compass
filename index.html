@@ -21,8 +21,34 @@
               <button class="hamburger"></button>
               <nav>
                 <ul class="nav-list">
-                    <li><a href="#shop">Shop</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li class="dropdown">
+                      <a href="#shop">Shop <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5L6 6.5L11 1.5" stroke="white" stroke-opacity="0.8" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </a>
+                    
+                      <div class="dropdown-menu">
+                        <a href="#">Random</a>
+                        <a href="#">Cats</a>
+                        <a href="#">Dogs</a>
+                        <a href="#">Fish</a>
+                        <a href="#">Birds</a>
+                      </div>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#services">Services <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1.5L6 6.5L11 1.5" stroke="white" stroke-opacity="0.8" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </a>
+
+                      <div class="dropdown-menu">
+                        <a href="#services">Grooming</a>
+                        <a href="#services">Boarding</a>
+                        <a href="#services">Veterinary</a>
+                        <a href="#services">Training</a>
+                        <a href="#services">Adoption</a>
+                      </div>
+                    </li>
                     <li><a href="#aboutUs">About Us</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -41,38 +67,40 @@
         </section>
 
         <section id="shop">
-            <div class="container">
-                <h2><img class="pataimg" src="img/patinhas.png"> Shop</h2>
+            <div class="container-shop">
+                <header class="logo-shop"><h2><img class="pataimg" src="img/patinhas.png"> Shop</h2></header>
 
+                <fieldset>
                 <div class="featured-products">
+                  <div class="tittle-searchbar">
                     <h3>Featured Products</h3>
 
-                    <div class="search-bar">
-                        <input type="text" placeholder="Search">
+                        <div ><input class="btn-search" type="text" placeholder= "Search"></div>
                     </div>
 
-                    <nav class="category-filters" aria-label="Product Categories">
-                        <button class="active">Random</button>
-                        <button>Cat</button>
-                        <button>Dogs</button>
-                        <button>Fish</button>
-                        <button>Birds</button>
+                    <nav class="btn-filters" >
+                        <button class="active btns-racao">Random</button>
+                        <button class="btns-racao">Cat</button>
+                        <button class="btns-racao">Dogs</button>
+                        <button class="btns-racao">Fish</button>
+                        <button class="btns-racao">Birds</button>
                     </nav>
 
                     <section class="product-list">
-                        <article class="product-list">
-                            <img src="" alt="Cat food packaging">
+                        <article class="img-product">
+                            <img class="img-list" src="img/racaoGato.png" alt="Cat food packaging">
                         </article>
-                        <article class="product-list">
-                            <img src="" alt="Dog food packaging">
+                        <article class="img-product">
+                            <img class="img-list" src="img/racaogato2.png" alt="Dog food packaging">
                         </article>
-                        <article class="product-list">
-                            <img src="" alt="Premium pet food packaging">
+                        <article class="img-product">
+                            <img class="img-list" src="img/racaoCachorro.png" alt="Premium pet food packaging">
                         </article>
                     </section>
 
-                    <a href="#" class="view-more">View More&gt;&gt;&gt;</a>
+                    <a href="#" class="view-more">View More &gt;&gt;&gt;</a>
                 </div>
+              </fieldset>
             </div>
         </section>
 
