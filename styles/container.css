@@ -1,18 +1,13 @@
-body {
-    background-color: gray;
-}
-
 body, header {
     margin: 0px;
     padding: 0px;
 }
 
-
-
 h1 {
     display: flex;
     align-items: center;
 }
+
 .patabranca{
     margin-right: 5px;
     width: 50px;
@@ -22,9 +17,6 @@ h1 {
 .pataimg {
     height: 35px;
 }
-
-
-
 
 .hero {
     height: calc(100vh - 70px);
@@ -62,6 +54,21 @@ h1 {
              gap: 30px;
              list-style: none;
 
+             .dropdown-menu {
+                position: absolute;
+                box-shadow: 0 0 2px black;
+                display: none;
+                background-color: #0364a5;
+            }
+            
+            .dropdown-menu a{
+                display: block;
+            }
+            
+            .dropdown:hover .dropdown-menu{
+                display: block;
+            
+            }
          }
          
          .nav-list a {
@@ -73,6 +80,11 @@ h1 {
      
      }
      }
+
+     .nav-list ul li:hover>ul {
+        display: block;
+    }
+
 
     .hero-text {
         width: 40%;
@@ -112,6 +124,80 @@ h1 {
     background: #fff;
     margin-top: 5px;
     transition: 0.3s;
+}
+
+.container-shop {
+    width: 85%;
+    margin-left: 7.5%;
+
+    .logo-shop {
+        border-bottom: 2px solid hsl(0, 0%, 41%);
+        margin-bottom: 3%;
+    }
+
+    .view-more {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .featured-products h3 {
+        padding-left: 2%;
+    }
+    .tittle-searchbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2%;
+        
+        .btn-search {
+            padding-top: 5%;
+            padding-bottom: 5%;
+            border-radius: 10px;
+            background-image: url("../img/64673.png");
+            background-color: #eeebeb;
+            background-size: 15px;
+            background-position: left 12px center;
+            background-repeat: no-repeat;
+            padding-left: 40px;
+            border: none;
+        }
+    }
+
+    .btn-filters {
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        align-items: center;
+    
+        .btns-racao {
+            border-radius: 15%;
+            width: 80px;
+            height: 80%;
+            margin-left: 1%;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+
+    .img-product {
+        width: 30%;
+    
+        .img-list {
+            width: 100%;
+            height: 90%;
+            padding-top: 5%;
+            
+        }
+        
+    }
 }
 
 @media (max-width: 750px) {

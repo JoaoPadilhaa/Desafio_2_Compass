@@ -5,6 +5,14 @@ h1 {
     font-family: 'Montserrat';
 }
 
+h2 {
+    font-family: "Montserrat";
+}
+
+h3{
+    font-family: "Montserrat";
+}
+
 .nav-list   {
     font-family: 'Montserrat';
     
@@ -14,8 +22,12 @@ h1 {
     font-size: 18px;
 }
 
-p {
+
+.hero-text p {
     color: white;
+}
+p {
+    color: black;
     font-family: "Montserrat";
 }
 
@@ -29,4 +41,21 @@ p {
 
 .hero-text p {
     font-size: 1.23em;
+}
+
+.view-more {
+    color: black;
+    font-family: "Montserrat";
+}
+
+.btn-secondary {
+    font-family: "Montserrat";
+}
+
+.btns-racao {
+    font-family: "Montserrat";
+}
+
+.btn-search {
+    font-family: "Montserrat";
 }
