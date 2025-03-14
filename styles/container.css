@@ -131,7 +131,7 @@ h1 {
     margin-left: 7.5%;
 
     .logo-shop {
-        border-bottom: 2px solid hsl(0, 0%, 41%);
+        border-bottom: 2px solid rgb(199, 196, 196);
         margin-bottom: 3%;
     }
 
@@ -198,6 +198,169 @@ h1 {
         }
         
     }
+}
+
+.hidden {
+    display: none;
+}
+
+.btns-racao:hover{
+    background: #0364a5;
+    transition: 0.5s;
+}
+
+button.active {
+    background-color: rgb(7, 52, 82);
+    color: white;
+}
+
+.product-card {
+    position: relative;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.1); /*efeito de zoom*/
+}
+
+.product-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #494949b3;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+    opacity: 1;
+    transform: translateY(0); /*animação para aparecer suavemente*/
+}
+
+.add-to-cart {
+    background: rgb(7, 52, 82);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    height: 35%;
+    width: 35%;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background: #0056b3;
+}
+
+
+.fav-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fav-btn:focus {
+    outline: none;
+}
+
+.heart-icon {
+    width: 1.5rem;
+  height: 1.5rem;
+  color: #9ca3af;
+  transition: all 0.2s ease;
+  margin-right: 25px;
+}
+
+.heart-icon.active {
+    color: #ef4444;
+    fill: #ef4444;
+  }
+  
+
+
+.fav-btn:hover {
+    color: red; /* Muda a cor ao passar o mouse */
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    background-color: rgb(7, 52, 82);
+    border-radius: 10px;
+    padding: 5px 10px;
+    gap: 10px;
+    width: 15%;
+   
+}
+
+.quantity-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    
+    border-radius: 5px;
+}
+
+.quantity-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#quantity {
+    color: white;
+    font-size: 18px;
+}
+
+.btn-cart {
+    height: 20%;
+    width: 100%;
+    margin-top: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.price {
+    float: left;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+.desc   {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    left: 0%;
 }
 
 @media (max-width: 750px) {
