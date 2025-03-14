@@ -79,23 +79,338 @@
                     </div>
 
                     <nav class="btn-filters" >
-                        <button class="active btns-racao">Random</button>
-                        <button class="btns-racao">Cat</button>
-                        <button class="btns-racao">Dogs</button>
-                        <button class="btns-racao">Fish</button>
-                        <button class="btns-racao">Birds</button>
+                        <button onclick="filterItems('all')" class="btns-racao">Random</button>
+                        <button onclick="filterItems('cat')" class="btns-racao">Cat</button>
+                        <button onclick="filterItems('dog')" class="btns-racao">Dogs</button>
+                        <button onclick="filterItems('fish')"class="btns-racao">Fish</button>
+                        <button onclick="filterItems('birds')"class="btns-racao">Birds</button>
                     </nav>
 
-                    <section class="product-list">
-                        <article class="img-product">
-                            <img class="img-list" src="img/racaoGato.png" alt="Cat food packaging">
+                    <section class="product-list products">
+                      <article class="img-product cat product-card">
+                        <img class="img-list product-image" src="img/racaogato3.avif" alt="Cat food packaging">
+                        <div class="product-overlay">
+                          <span class="price">₦15,000.00</span>
+                          <button class="fav-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                          </svg>
+                          </button>
+
+                          <div class="desc">
+                            <h3>Cat Foodt</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur.
+                              Vitae donec pellentesque ut eget tempor
+                              egestas diam.
+                            </p>
+                        </div>
+                          <div class="btn-cart">
+                            <div class="quantity-container">
+                              <button class="quantity-btn" onclick="increase()">+</button>
+                              <span id="quantity">1</span>
+                              <button class="quantity-btn" onclick="decrease()">-</button>
+                            </div>
+                            <button class="add-to-cart">+ Add to Cart</button>
+                          </div>
+                          
+                        </div>
+                    </article>
+                        <article class="img-product cat product-card">
+                            <img class="img-list product-image" src="img/racaoGato.png" alt="Cat food packaging">
+                            <div class="product-overlay">
+                              <span class="price">₦15,000.00</span>
+                              <button class="fav-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                              </svg>
+                              </button>
+
+                              <div class="desc">
+                                <h3>Multivitamin For Cat</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.
+                                  Vitae donec pellentesque ut eget tempor
+                                  egestas diam.
+                                </p>
+                            </div>
+                              <div class="btn-cart">
+                                <div class="quantity-container">
+                                  <button class="quantity-btn" onclick="increase()">+</button>
+                                  <span id="quantity">1</span>
+                                  <button class="quantity-btn" onclick="decrease()">-</button>
+                                </div>
+                                <button class="add-to-cart">+ Add to Cart</button>
+                              </div>
+                              
+                            </div>
                         </article>
-                        <article class="img-product">
-                            <img class="img-list" src="img/racaogato2.png" alt="Dog food packaging">
+                        <article class="img-product cat product-card">
+                            <img class="img-list product-image" src="img/racaogato2.png" alt="Cat food packaging">
+                            <div class="product-overlay">
+                              <span class="price">₦15,000.00</span>
+                              <button class="fav-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                              </svg>
+                              </button>
+
+                              <div class="desc">
+                                <h3>Cat Food</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.
+                                  Vitae donec pellentesque ut eget tempor
+                                  egestas diam.
+                                </p>
+                            </div>
+                              <div class="btn-cart">
+                                <div class="quantity-container">
+                                  <button class="quantity-btn" onclick="increase()">+</button>
+                                  <span id="quantity">1</span>
+                                  <button class="quantity-btn" onclick="decrease()">-</button>
+                                </div>
+                                <button class="add-to-cart">+ Add to Cart</button>
+                              </div>
+                              
+                            </div>
                         </article>
-                        <article class="img-product">
-                            <img class="img-list" src="img/racaoCachorro.png" alt="Premium pet food packaging">
+                        <article class="img-product dog product-card">
+                            <img class="img-list product-image" src="img/racaoCachorro.png" alt="Premium pet food packaging">
+                            <div class="product-overlay">
+                              <span class="price">₦15,000.00</span>
+                              <button class="fav-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                              </svg>
+                              </button>
+
+                              <div class="desc">
+                                <h3>Dog Food</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur.
+                                  Vitae donec pellentesque ut eget tempor
+                                  egestas diam.
+                                </p>
+                            </div>
+                              <div class="btn-cart">
+                                <div class="quantity-container">
+                                  <button class="quantity-btn" onclick="increase()">+</button>
+                                  <span id="quantity">1</span>
+                                  <button class="quantity-btn" onclick="decrease()">-</button>
+                                </div>
+                                <button class="add-to-cart">+ Add to Cart</button>
+                              </div>
+                              
+                            </div>
                         </article>
+                        <article class="img-product dog product-card">
+                          <img class="img-list product-image" src="img/produto_cachorro2.png" alt="Shampoo cachorro">
+                          <div class="product-overlay">
+                            <span class="price">₦15,000.00</span>
+                            <button class="fav-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                            </svg>
+                            </button>
+
+                            <div class="desc">
+                              <h3>Dog Food</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur.
+                                Vitae donec pellentesque ut eget tempor
+                                egestas diam.
+                              </p>
+                          </div>
+                            <div class="btn-cart">
+                              <div class="quantity-container">
+                                <button class="quantity-btn" onclick="increase()">+</button>
+                                <span id="quantity">1</span>
+                                <button class="quantity-btn" onclick="decrease()">-</button>
+                              </div>
+                              <button class="add-to-cart">+ Add to Cart</button>
+                            </div>
+                            
+                          </div>
+                      </article>
+                      <article class="img-product dog product-card">
+                        <img class="img-list product-image" src="img/produto_cachorro3.png" alt="Pote de ração cachorro">
+                        <div class="product-overlay">
+                          <span class="price">₦15,000.00</span>
+                          <button class="fav-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                          </svg>
+                          </button>
+
+                          <div class="desc">
+                            <h3>Dog Food</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur.
+                              Vitae donec pellentesque ut eget tempor
+                              egestas diam.
+                            </p>
+                        </div>
+                          <div class="btn-cart">
+                            <div class="quantity-container">
+                              <button class="quantity-btn" onclick="increase()">+</button>
+                              <span id="quantity">1</span>
+                              <button class="quantity-btn" onclick="decrease()">-</button>
+                            </div>
+                            <button class="add-to-cart">+ Add to Cart</button>
+                          </div>
+                          
+                        </div>
+                    </article>
+                    <article class="img-product birds product-card">
+                      <img class="img-list product-image" src="img/336e578aadd227ee1db481a05bce4bae.png" alt="Passaro">
+                      <div class="product-overlay">
+                        <span class="price">₦15,000.00</span>
+                        <button class="fav-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                        </svg>
+                        </button>
+
+                        <div class="desc">
+                          <h3>Bird Food</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur.
+                            Vitae donec pellentesque ut eget tempor
+                            egestas diam.
+                          </p>
+                      </div>
+                        <div class="btn-cart">
+                          <div class="quantity-container">
+                            <button class="quantity-btn" onclick="increase()">+</button>
+                            <span id="quantity">1</span>
+                            <button class="quantity-btn" onclick="decrease()">-</button>
+                          </div>
+                          <button class="add-to-cart">+ Add to Cart</button>
+                        </div>
+                        
+                      </div>
+                  </article>
+                  <article class="img-product birds product-card">
+                    <img class="img-list product-image" src="img/racaopassaro1.webp" alt="Passaro">
+                    <div class="product-overlay">
+                      <span class="price">₦15,000.00</span>
+                      <button class="fav-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                      </svg>
+                      </button>
+
+                      <div class="desc">
+                        <h3>Bird Food</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.
+                          Vitae donec pellentesque ut eget tempor
+                          egestas diam.
+                        </p>
+                    </div>
+                      <div class="btn-cart">
+                        <div class="quantity-container">
+                          <button class="quantity-btn" onclick="increase()">+</button>
+                          <span id="quantity">1</span>
+                          <button class="quantity-btn" onclick="decrease()">-</button>
+                        </div>
+                        <button class="add-to-cart">+ Add to Cart</button>
+                      </div>
+                      
+                    </div>
+                </article>
+                <article class="img-product birds product-card">
+                  <img class="img-list product-image" src="img/racaopassaro2.webp" alt="Passaro">
+                  <div class="product-overlay">
+                    <span class="price">₦15,000.00</span>
+                    <button class="fav-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                      <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                    </svg>
+                    </button>
+
+                    <div class="desc">
+                      <h3>Bird Food</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur.
+                        Vitae donec pellentesque ut eget tempor
+                        egestas diam.
+                      </p>
+                  </div>
+                    <div class="btn-cart">
+                      <div class="quantity-container">
+                        <button class="quantity-btn" onclick="increase()">+</button>
+                        <span id="quantity">1</span>
+                        <button class="quantity-btn" onclick="decrease()">-</button>
+                      </div>
+                      <button class="add-to-cart">+ Add to Cart</button>
+                    </div>
+                    
+                  </div>
+              </article>
+              <article class="img-product fish product-card">
+                <img class="img-list product-image" src="img/racaopeixe1.webp" alt="Passaro">
+                <div class="product-overlay">
+                  <span class="price">₦15,000.00</span>
+                  <button class="fav-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                  </svg>
+                  </button>
+    
+                  <div class="desc">
+                    <h3>Fish Food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.
+                      Vitae donec pellentesque ut eget tempor
+                      egestas diam.
+                    </p>
+                </div>
+                  <div class="btn-cart">
+                    <div class="quantity-container">
+                      <button class="quantity-btn" onclick="increase()">+</button>
+                      <span id="quantity">1</span>
+                      <button class="quantity-btn" onclick="decrease()">-</button>
+                    </div>
+                    <button class="add-to-cart">+ Add to Cart</button>
+                  </div>
+                  
+                </div>
+            </article>
+              <article class="img-product fish product-card">
+                <img class="img-list product-image" src="img/racaopeixe2.webp" alt="Passaro">
+                <div class="product-overlay">
+                  <span class="price">₦15,000.00</span>
+                  <button class="fav-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                  </svg>
+                  </button>
+    
+                  <div class="desc">
+                    <h3>Fish Food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.
+                      Vitae donec pellentesque ut eget tempor
+                      egestas diam.
+                    </p>
+                </div>
+                  <div class="btn-cart">
+                    <div class="quantity-container">
+                      <button class="quantity-btn" onclick="increase()">+</button>
+                      <span id="quantity">1</span>
+                      <button class="quantity-btn" onclick="decrease()">-</button>
+                    </div>
+                    <button class="add-to-cart">+ Add to Cart</button>
+                  </div>
+                  
+                </div>
+            </article>    
+          <article class="img-product fish product-card">
+            <img class="img-list product-image" src="img/racaopeixe3.webp" alt="Passaro">
+            <div class="product-overlay">
+              <span class="price">₦15,000.00</span>
+              <button class="fav-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart-icon">
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+              </svg>
+              </button>
+
+              <div class="desc">
+                <h3>Fish Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.
+                  Vitae donec pellentesque ut eget tempor
+                  egestas diam.
+                </p>
+            </div>
+              <div class="btn-cart">
+                <div class="quantity-container">
+                  <button class="quantity-btn" onclick="increase()">+</button>
+                  <span id="quantity">1</span>
+                  <button class="quantity-btn" onclick="decrease()">-</button>
+                </div>
+                <button class="add-to-cart">+ Add to Cart</button>
+              </div>
+              
+            </div>
+        </article>
                     </section>
 
                     <a href="#" class="view-more">View More &gt;&gt;&gt;</a>
