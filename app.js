@@ -39,21 +39,24 @@ document.addEventListener("DOMContentLoaded", function () {
     filterItems("all");
 });
 
-//botão de adcionar mais ou menos no carrinho
 
-let quantity = 1;
+document.querySelectorAll(".quantity-container").forEach(container => {
+    let quantityElement = container.querySelector("span"); // Seleciona o span dentro do container
+    let quantity = parseInt(quantityElement.textContent) || 1; // Garante que a quantidade começa em 1
 
-function increase () {
-    quantity++;
-    document.getElementById("quantity").textContent = quantity;
-}
+    container.querySelector(".quantity-btn:nth-child(1)").addEventListener("click", () => {
+        quantity++;
+        quantityElement.textContent = quantity;
+    });
 
-function decrease() {
-    if (quantity > 1) {
-        quantity--;
-        document.getElementById("quantity").textContent = quantity;
-    }
-}
+    container.querySelector(".quantity-btn:nth-child(3)").addEventListener("click", () => {
+        if (quantity > 1) {
+            quantity--;
+            quantityElement.textContent = quantity;
+        }
+    });
+});
+
 
 //função de favoritar item
 document.addEventListener('DOMContentLoaded', () => {
