@@ -69,3 +69,91 @@ p {
     font-family: "Montserrat";
     color:  white;
 }
+
+.text-overlay {
+    color: white;
+    font-size: 3.7em;
+    font-family: "Montserrat"
+}
+
+.desc-services h3 {
+    font-size: 2em;
+}
+
+.desc-services p {
+    font-family: "Montserrat";
+    color:white;
+}
+
+.add-to-cart {
+    font-family: "Montserrat";
+}
+
+.about-text p {
+    font-family: "Montserrat";
+    font-size: 1.2em;
+}
+
+.team-member p {
+    font-family: "Montserrat";
+    color: gray;
+    font-size: 1.2em;
+}
+
+.team-member h3 {
+    font-size: 1.3em;
+}
+
+.content-text-blog {
+    font-family: "Montserrat";
+}
+
+.content-text-blog h3 {
+    font-size: 2.3em;
+}
+
+.content-text-blog p {
+    color: gray;
+    font-size: 1.3em;
+
+}
+
+.content-text-blog h4 {
+    font-size: 1.6em;
+}
+
+.btn-fifth {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-size: 1.2em;
+}
+
+.get-in-touch h2 {
+    color: white;
+}
+
+.forms {
+    color: white;
+}
+
+.aside-contact {
+    color: white;
+}
+
+.aside-contact p {
+    color: white;
+}
+
+.aside-contact li {
+font-family: "Montserrat";
+}
+
+.aside-contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.aside-contact li p{
+    color: hsl(0, 0%, 69%);
+}
