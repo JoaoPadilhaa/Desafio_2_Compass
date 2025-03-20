@@ -311,7 +311,7 @@ h1 {
     position: absolute;
     top: 0%;
     left: 0%;
-    
+
     .desc-services p {
         text-align: justify;
         width: 80%;
@@ -375,10 +375,11 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 3%;
+    
 }
 
 .team-img {
-    width: 350px;
+    width: 300px;
     padding-top: 20%;
 }
 
