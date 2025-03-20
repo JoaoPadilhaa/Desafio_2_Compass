@@ -1,21 +1,24 @@
-@media (max-width: 750px) {
+@media (max-width: 500px) {
     .hamburger {
         display: block;
-        z-index: 1;
+        z-index: 10;
         position: absolute;
         right: 20px;
+        top: 20px;
+        cursor: pointer;
     }
 
     .nav-list {
-        position: fixed;
+        position: absolute;
         top: 0;
         right: 0;
-        width: 60vw;
+        width: 200px;
         height: 100vh;
         background: #0371bb;
-        clip-path: circle(100px at 90% -15%);
-        transition: 1s ease-out;
+        clip-path: circle(100px at 100% -10%);
+        transition: clip-path 0.5s ease-out;
          
+        display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
@@ -24,7 +27,7 @@
     }
 
     .nav.active .nav-list {
-        clip-path: circle(1500px at 90% -15%);
+        clip-path: circle(1500px at 100% -10%);
         pointer-events: all;
     }
 
@@ -67,5 +70,247 @@
     .nav.active .hamburger::after {
         transform: rotate(-135deg);
         top: -7px;
+    }
+
+    .product-list   {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-shop {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .hero {
+        width: 100%;
+    }
+    
+    .content-team {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .team-img {
+        width: 100%;
+    }
+
+    .team-member h3 {
+        font-size: 1.2em;
+    }
+
+    .content-blog {
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    .content-text-blog {
+        width: 100%!important;
+    }
+    
+    .content-text-blog p{
+        font-size: 1.1em;
+    }
+
+    .content-text-blog h3{
+        font-size: 1.8em;
+    }
+
+    .img-video {
+        width: 100%!important;
+    }
+
+    .social-links a{
+        margin-left: 20px;
+    }
+
+    .team-member p {
+        font-size: 1em;
+    }
+
+    .nav-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aside-contact ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr!important;
+        grid-template-rows: auto auto;
+        gap: 5%;
+        margin-top: 15%!important;
+        padding-bottom: 15%;
+        margin-right: 5%;
+        
+    }
+
+    .forms {
+         width: 100%!important;
+         margin-left: 0!important;
+    }
+
+    .aside-contact li h3{
+        font-size: 1.2em!important;
+    }
+
+    .aside-contact li p{
+        font-size: 0.9em!important;
+    }
+
+    .aside-contact li a{
+        font-size: 0.9em!important;
+    }
+
+    .container-get-in-touch {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .container-get-in-touch {
+        display: flex;
+        flex: column;
+    }
+
+    .logo-footer {
+        gap: 10%!important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-text {
+        width: 370px!important;
+        margin-left: 30px!important;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2em;
+        margin-top: 200px;
+    }
+
+    .hero-text p {
+        font-size: 1.3em;
+        margin-top: 50px;
+    }
+
+    .img-product {
+        width: 80%!important;
+        margin-left: 10%;
+    }
+
+    .img-list {
+        width: 100%!important;
+    }
+
+    .grid-container  {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto!important;
+        gap: 1%;
+        width: 100%;
+        height: 800px!important;
+    }
+
+
+    .image-container:last-child {
+        grid-column: span 2;
+        grid-row: span 2;
+        height: 100%;
+        width: 100%!important;
+
+    }
+    
+    .product-card2 {
+        width:165px!important ;
+        margin-left: 0;
+    }
+
+    .text-overlay {
+        font-size: 1.3em!important;
+    }
+
+    .desc-services h3 {
+        font-size: 1.3em;
+        padding-top: 30px!important;
+    }
+
+    .desc-services p {
+        font-size: 0.5em;
+        margin-top: 5%;
+    }
+
+    .desc-services {
+        height: 100px;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-text {
+        max-width: 100%!important;
+        font-size: 0.8em;
+    }
+
+    .about-images {
+        width: 100%!important;
+    
+    }
+
+    .btn-search-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search-footer {
+        margin-bottom: 5%;
+    }
+
+    .pawnsplay-logo {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .org-all-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
+
+    .ajuste-direitos{
+        flex-direction: column;
+    }
+
+    .ajuste-direitos p {
+        width: 95%;
+       padding-left: 5%;
+    }
+
+    .social-icons {
+        padding-left: 25%;
+        padding-bottom: 10%;
+    }
+
+    #blog {
+        margin-top: 25%;
+        margin-bottom: 25%;
+    }
+
+    .add-to-cart2{
+        font-size: 0.5em!important;
+        height: 30px;
+    }
+    
+    .btn-services {
+        height: 50px;
+    }
+
+    .text-big {
+        font-size: 0.5em!important;
     }
 }

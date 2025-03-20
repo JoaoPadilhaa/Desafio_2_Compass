@@ -157,3 +157,8 @@ font-family: "Montserrat";
 .aside-contact li p{
     color: hsl(0, 0%, 69%);
 }
+
+.nav-footer {
+    font-family: "Montserrat";
+}
+

@@ -66,6 +66,10 @@ h1 {
              justify-content: start;
              text-decoration: none;
          }
+
+         .nav-list a:hover {
+            color:#00d4ff ;
+         }
      }
      }
 
@@ -86,7 +90,7 @@ h1 {
     display: none;
     border: none;
     background: none;
-    border-top: 3px solid #fff;
+    border-top: 3px solid hwb(0 100% 0%);
     cursor: pointer;
 }
 
@@ -108,7 +112,7 @@ h1 {
     .logo-shop {
         border-bottom: 2px solid rgb(199, 196, 196);
         margin-bottom: 3%;
-        padding-top: 3%;
+        padding-top: 6%;
     }
  
     .featured-products h3 {
@@ -161,6 +165,14 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.product-card2 {
+    position: relative;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .product-image {
     width: 100%;
     display: block;
@@ -187,6 +199,11 @@ h1 {
 }
 
 .product-card:hover .product-overlay {
+    opacity: 1;
+    transform: translateY(0); /*animação para aparecer suavemente*/
+}
+
+.product-card2:hover .product-overlay {
     opacity: 1;
     transform: translateY(0); /*animação para aparecer suavemente*/
 }
@@ -226,7 +243,7 @@ h1 {
     .logo-services  {
         border-bottom: 2px solid rgb(199, 196, 196);
             margin-bottom: 3%;
-            padding-top: 3%;
+            padding-top: 8%;
     }
 
    
@@ -292,9 +309,9 @@ h1 {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 20%;
+    top: 0%;
     left: 0%;
-
+    
     .desc-services p {
         text-align: justify;
         width: 80%;
@@ -312,7 +329,7 @@ h1 {
         border-bottom: 2px solid rgb(199, 196, 196);
             margin-bottom: 3%;
             width: 100%;
-           padding-top: 3%;
+           padding-top: 8%;
     }
 
     .about-text {
@@ -346,6 +363,7 @@ h1 {
 
 .logo-our-team {
     border-bottom: 2px solid rgb(199, 196, 196);
+    margin-top: 8%;
 }
 
 .our-team {
@@ -419,7 +437,8 @@ h1 {
 
 .contact {
     background:#0f172a;
-
+    margin-bottom: 0;
+    padding-bottom: 0;
     .get-in-touch {
         width: 100%;
         padding-top: 4%;
@@ -501,9 +520,8 @@ h1 {
     .aside-contact ul{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        gap: 15%;
-        margin-top: 20%;
+        margin-top: 25%;
+        gap: 5%;
     }
 
     .aside-contact li {
@@ -519,7 +537,119 @@ h1 {
     .img-aside-contact img {
         width: 100%;
     }
-
-   
     
 }
+
+#footer {
+    background: #0f172a; 
+    margin-top: 0;
+    padding-top: 0%;
+    border-top: 2px solid rgb(199, 196, 196);
+    color: white;
+
+    .all-content {
+        width: 85%;
+        margin-left: 7.5%;
+    }
+
+    .logo-footer {
+        display: flex;
+        justify-content: center;
+        gap: 40%;
+    }
+
+    .search-footer {
+        padding: 10px 35px;
+        margin-top: 12%;
+        border-radius: 12px;
+        border: none;
+    }
+}
+
+#footer h2 {
+    margin-top: 0;
+    margin-top: 10%;
+}
+
+.org-all-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.nav-footer {
+    display: flex;
+    gap: 100px;
+    padding-right: 10%;
+}
+
+.nav-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-footer ul li strong {
+    margin-bottom: 8px;
+    font-size: 1.2em;
+    display: inline-block;
+}
+
+.nav-footer ul li a {
+    color: #969393;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+.nav-footer ul li a:hover {
+    background: linear-gradient(135deg, hwb(0 29% 71%), hwb(0 33% 67%));
+    transform: translateY(-2px)
+}
+
+#footer p {
+    color: white;
+}
+
+.pawnsplay-logo {
+    margin-left: 4.1%;
+    font-size: 1.2em;
+}
+
+.direitos {
+    border-top: 2px solid rgb(199, 196, 196);
+
+}
+
+.direitos p {
+    margin-bottom: 0;
+    padding-bottom: 3%;
+    padding-top: 2%;
+}
+
+.social-icons {
+    width: 180px;
+    display: fleX;
+    gap: 10%;
+    padding-top: 2%;
+}
+
+.social-icons img {
+    width: 100%;
+}
+
+.ajuste-direitos{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+
+  .social-icons a:hover {
+    transform: translateY(-5px);
+  }
