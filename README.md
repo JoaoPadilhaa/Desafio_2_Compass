@@ -18,8 +18,8 @@ Neste projeto, apliquei os seguintes conceitos e ferramentas:
 
 **HTML** :
 
-Elementos semânticos como <header>, <footer>, <section>, <article>, e <div>para estruturar a página.
-Incorporação de imagens usando atributos <img>apropriados altpara acessibilidade.
+Elementos semânticos como '<header>', '<footer>', '<section>', '<article>', e '<div>' para estruturar a página.
+Incorporação de imagens usando atributos '<img>' apropriados altpara acessibilidade.
 
 **CSS** :
 
